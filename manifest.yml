@@ -1,0 +1,12 @@
+applications:
+- path: .
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: NodeRedHumidityTemperatureCoSensor
+  host: NodeRedHumidityTemperatureCoSensor
+  disk_quota: 1024M
+  services:
+  - Internet of Things Platform-dc
+  - NodeRedHumidityTemperatureCoSensor-cloudantNoSQLDB
+  - availability-monitoring-auto
